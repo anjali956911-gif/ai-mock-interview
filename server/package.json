@@ -1,20 +1,25 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "server.js",
+  "description": "AI Mock Interview Backend",
   "type": "module",
+  "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "dependencies": {
-    "bcrypt": "^6.0.0",
+    "@google/genai": "^2.13.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1",
+    "express": "^4.21.2",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.7.4"
+    "mongoose": "^8.24.1",
+    "openai": "^6.48.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.10"
   }
 }
